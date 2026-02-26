@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <h1>hi iam third react</h1>
       {
-        myFriends.map(friend=><Friends key={friend.id} friend={friend}></Friends>)
+        myFriends.map(friend=><Friends key={friend.id} showButton = {index===0} friend={friend}></Friends>)
       }
     </div>
   );
