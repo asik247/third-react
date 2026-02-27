@@ -9,6 +9,9 @@ const Post = ({data}) => {
             <p>{body}</p>
             <button>{userId}</button>
             <h1>{lessonName}</h1>
+           {
+             console.log("hi")
+           }
         </div>
     );
 };
