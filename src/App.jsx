@@ -1,6 +1,7 @@
 import React from 'react';
 import Friends from './Components/Friends';
 import Count from './Components/Count';
+import Input from './Components/Input';
 const App = () => {
   const myFriends = [
     {id:1,name:'ar',age:20,hobbie:'codding'},
@@ -26,7 +27,8 @@ const App = () => {
       }}>Click Me 2</button>
       <button onClick={()=>addNumber(10)}>Add Number</button>
       <br />
-      <Count></Count>
+      <Count></Count><br /><br />
+      <Input></Input>
     </div>
   );
 };
