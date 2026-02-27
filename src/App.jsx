@@ -16,6 +16,9 @@ const App = () => {
         myFriends.map(friend=><Friends key={friend.id}  friend={friend}></Friends>)
       }
       <button onClick={handle}>Click Me</button>
+      <button onClick={function handle2(){
+        alert("btn 2 clicked")
+      }}>Click Me 2</button>
     </div>
   );
 };
