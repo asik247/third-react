@@ -3,12 +3,14 @@ import Post from './Post';
 
 const Posts = ({allDatas}) => {
     const datas = use(allDatas);
-    console.log(datas);
+    // console.log(datas);
+    const myDatas = datas.data;
+    console.log(myDatas);
     return (
         <div>
             <h1>Iam Post here</h1>
             {
-                datas.map(data=><Post key={data.id} data={data}></Post>)
+                myDatas.map(data=><Post key={data.id} data={data}></Post>)
             }
         </div>
     );

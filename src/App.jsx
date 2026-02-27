@@ -19,7 +19,7 @@ const fetchData = async () => {
 }
 // all post fetch code start here;
 const fetchDatas = async () =>{
-  const res =await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res =await fetch("https://openapi.programming-hero.com/api/levels/all");
   return res.json()
 }
 
