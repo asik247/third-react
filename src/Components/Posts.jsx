@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import Post from './Post';
 
 const Posts = ({allDatas}) => {
     const datas = use(allDatas);
@@ -6,6 +7,9 @@ const Posts = ({allDatas}) => {
     return (
         <div>
             <h1>Iam Post here</h1>
+            {
+                datas.map(data=><Post key={data.id} data={data}></Post>)
+            }
         </div>
     );
 };
