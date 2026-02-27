@@ -10,6 +10,9 @@ const Batting = () => {
             {
                 runs >=50 && <p>Congrase</p>
             }
+            {
+                runs || <p>zero</p>
+            }
             <h1>Tanzid Tamim</h1>
             <p>Runs:{runs}</p>
             <button onClick={forHid}>Four Hit</button>
