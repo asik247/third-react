@@ -2,6 +2,7 @@ import React from 'react';
 import Friends from './Components/Friends';
 import Count from './Components/Count';
 import Input from './Components/Input';
+import Input2 from './Components/Input2';
 const App = () => {
   const myFriends = [
     {id:1,name:'ar',age:20,hobbie:'codding'},
@@ -29,6 +30,8 @@ const App = () => {
       <br />
       <Count></Count><br /><br />
       <Input></Input>
+      <br />
+      <Input2></Input2>
     </div>
   );
 };
