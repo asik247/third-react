@@ -9,6 +9,10 @@ const App = () => {
   const handle = ()=>{
     alert("btn clicked")
   }
+  const addNumber = (num) =>{
+    const newNumber = num + 10;
+    alert(newNumber)
+  }
   return (
     <div>
       <h1>hi iam third react</h1>
@@ -19,6 +23,7 @@ const App = () => {
       <button onClick={function handle2(){
         alert("btn 2 clicked")
       }}>Click Me 2</button>
+      <button onClick={()=>addNumber(10)}>Add Number</button>
     </div>
   );
 };
