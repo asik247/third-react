@@ -5,6 +5,7 @@ import Input from './Components/Input';
 import Input2 from './Components/Input2';
 import Batting from './Components/Batting';
 import Users from './Components/Users';
+import Posts from './Components/Posts';
 
 
 
@@ -14,6 +15,11 @@ import Users from './Components/Users';
 const fetchData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users")
   // return (await res).json()
+  return res.json()
+}
+// all post fetch code start here;
+const fetchDatas = async () =>{
+  const res =await fetch("https://jsonplaceholder.typicode.com/posts");
   return res.json()
 }
 
@@ -28,6 +34,9 @@ const fetchData = async () => {
 
 const App = () => {
   const allData = fetchData()
+  // Post code here;
+  const allDatas = fetchDatas();
+  console.log(allDatas);
   const myFriends = [
     { id: 1, name: 'ar', age: 20, hobbie: 'codding' },
     { id: 2, name: 'ar', age: 20, hobbie: 'codding' },
@@ -64,6 +73,10 @@ const App = () => {
 
       <Suspense fallback={<h1>Loadding............</h1>}>
         <Users allData = {allData}></Users>
+      </Suspense>
+      <br /><br />
+      <Suspense fallback={<p>Post Comming Soon...</p>}>
+        <Posts allDatas = {allDatas} ></Posts>
       </Suspense>
     </div>
   );

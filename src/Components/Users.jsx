@@ -1,9 +1,9 @@
 import React, { use } from 'react';
 
 const Users = ({ allData }) => {
-    console.log(allData);
+    // console.log(allData);
     const datas = use(allData)
-    console.log(datas);
+    // console.log(datas);
 
     return (
 
